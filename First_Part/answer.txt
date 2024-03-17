@@ -1,1 +1,5 @@
-cat event_history.csv | grep -i paul | grep TerminateInstances | grep -Eo i-[a-zA-Z0-9]{17}|sort|uniq >  result1.txt
+cat event_history.csv | grep -i paul | grep TerminateInstances | grep -Eo i-[a-zA-Z0-9]{17}|sort|uniq >  result.txt
+ 
+ OR
+
+ cat event_history.csv | grep -i paul | grep TerminateInstances | grep -Eo i-[a-zA-Z0-9]{17}|sort|uniq tee  result.txt
